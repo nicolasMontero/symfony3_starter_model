@@ -1,6 +1,3 @@
-user:
-    resource: "@UserBundle/Resources/config/routing.yml"
-
-app.index:
-    resource: "@AppBundle/Controller/IndexController.php"
+app:
+    resource: '@AppBundle/Controller/'
     type: annotation
