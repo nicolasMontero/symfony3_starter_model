@@ -1,3 +1,19 @@
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+homepage:
+  methods: 'GET'
+  path: '/'
+  defaults:
+    _controller: AppBundle:Default:index
+
+app_bundle:
+  resource: '@AppBundle/Resources/config/routing.yml'
+
+
+# A quoi sert le @ devant AppBundle ?
+
+
+# Cette page permet de définir le controller par défaut. C'est à dire définir la page qui va s'afficher en premier lors de l'ouverture
+# de la page.
+#
+# app_bundle
+# resource: '@AppBundle/Resources/config/routing.yml'
+# Les lignes du dessus indiquent l'emplacement des fichiers de routage.
